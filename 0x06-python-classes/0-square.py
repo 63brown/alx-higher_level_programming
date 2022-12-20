@@ -4,4 +4,4 @@
 
 class Square:
     """The empty class Square."""
-    pasis
+    pass
