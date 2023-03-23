@@ -14,11 +14,11 @@ if __name__ == "__main__":
         charset="utf8"
     )
 
-    cursor = db.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
-    rows = cursor.fetchall()
+    cur = db.cursor()
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
+    rows = cur.fetchall()
     for row in rows:
         print(row)
-    cursor.close()
+    cur.close()
     db.close()
 
